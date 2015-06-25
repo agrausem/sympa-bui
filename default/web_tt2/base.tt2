@@ -1,0 +1,36 @@
+[% PROCESS lib/ressources.tt2 %]
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="[% lang %]" xml:lang="[% lang %]"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="[% lang %]" xml:lang="[% lang %]"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="[% lang %]" xml:lang="[% lang %]"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="[% lang %]" xml:lang="[% lang %]"> <!--<![endif]-->
+  [% INCLUDE base_page/header.tt2 %]
+  <body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    [% INCLUDE base_page/navbar.tt2 %]
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 menu">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <a href="#">
+                <img class="img-responsive" alt="[% main_title %]"src="[% STATIC_URL %]/logo.png">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          [% content %]
+        </div>
+      </div>
+    </div> <!-- /container -->
+    [% INCLUDE base_page/footer.tt2 %]
+    [% INCLUDE js uri="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" %]
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    [% INCLUDE js uri="$STATIC_URL/js/vendor/bootstrap.min.js" %]
+    [% INCLUDE js uri="$STATIC_URL/js/plugins.js" %]
+    [% INCLUDE js uri="$STATIC_URL/js/main.js" %]
+  </body>
+</html>

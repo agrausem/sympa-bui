@@ -1,0 +1,33 @@
+<nav class="navbar navbar-inverse navbar-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <form action="[% path_cgi %]" method="post" role="search" class="form-search navbar-form navbar-left">
+        [% label = "Search for a list" %]
+        <div class="input-group">
+          <input class="form-control" type="search" name="filter" value="[% filter %]" alt="[% label|loc %]" placeholder="[% label|loc %]"/>
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+          </span>
+        </div>
+        <input type="hidden" name="action" value="search_list" />
+        <!-- <div class="form_row"><input class="MainMenuLinks" type="submit" name="action_search_list" value="[%|loc%]Search lists[%END%]" onclick="show('loading'); hide('content-inner');"/></div> -->
+        <br />
+      </form>
+      <ul class="nav nav-pills navbar-right">
+        <li>
+          <button class="btn btn-default navbar-btn" type="button" data-toggle="modal" data-target="#localAuth">[%|loc%]Sign in[% END %]</buttons>
+        </li>
+        [% INCLUDE auth/sso.tt2 %]
+      </ul>
+    </div><!--/.navbar-collapse -->
+  </div>
+  [% INCLUDE auth/local.tt2 %]
+</nav>

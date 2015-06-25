@@ -1,0 +1,11 @@
+[% FILTER loc = html; END; %]
+[%
+  main_title = "Sympa";
+  action = "Home";
+  STATIC_URL = "";
+  # custom_css = "$STATIC_URL/css/my.css";
+  # conf =  {
+  #  favicon_url = "$STATIC_URL/favicon.ico"
+  # };
+
+ %]

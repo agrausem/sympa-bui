@@ -1,0 +1,7 @@
+[% IF sso_uri %]
+<li>
+  <button id="sso" class="btn btn-success navbar-btn" type="button" href="[% sso_uri %]">
+    [%|loc%]SSO Sign in[% END %]
+  </button>
+</li>
+[% END %]

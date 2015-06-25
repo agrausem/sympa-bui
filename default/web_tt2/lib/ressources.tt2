@@ -1,0 +1,13 @@
+[% BLOCK css -%]
+<link rel="stylesheet" href="[% uri %]">
+[%- END %]
+[% BLOCK favicon -%]
+<link rel="shortcut icon" href="[% uri %]">
+<link rel="apple-touch-icon" href="[% apple_uri %]">
+[%- END %]
+[% BLOCK js -%]
+<script src="[% uri %]"></script>
+[%- END %]
+[% BLOCK rss -%]
+<link rel="alternate" type="application/xml" title="[% title|loc %]" href="[% uri %]"/>
+[%- END %]

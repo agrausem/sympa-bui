@@ -1,0 +1,8 @@
+<footer>
+  <div class="container">
+    <p class="text-muted">
+      <img src="[% fav_uri %]" alt="[%|loc%]SYMPA logo[%END%]" width="20px" height="20px"/>
+      <a href="http://www.sympa.org"> Powered by Sympa [% version %]</a>
+    </p>
+  </div>
+</footer>
