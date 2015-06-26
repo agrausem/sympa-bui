@@ -5,9 +5,9 @@
    sso_uri = 'https://cas.unistra.fr/cas/login/' %]
 
 [% WRAPPER base.tt2 %]
-  <h3>[% |loc %]Listes de diffusion de l'Université de Strasbourg[% END %]</h3>
-  <p>Ce serveur vous propose un accès à votre environnement de listes de diffusion.
-     A partir de cette page vous pouvez choisir vos options d'abonnement, vous
-     désabonner, accéder aux archives ou gérer les listes dont vous êtes
-     propriétaire, etc. </p>
+<h3>[% |loc %]Listes de diffusion de l'Université de Strasbourg[% END %]</h3>
+<p>Ce serveur vous propose un accès à votre environnement de listes de diffusion.
+   A partir de cette page vous pouvez choisir vos options d'abonnement, vous
+   désabonner, accéder aux archives ou gérer les listes dont vous êtes
+   propriétaire, etc.</p>
 [% END %]
